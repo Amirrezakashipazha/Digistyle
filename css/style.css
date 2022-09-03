@@ -1,0 +1,429 @@
+@charset "UTF-8";
+@font-face {
+  font-family: iranYEkAN;
+  src: url("../font/Yekan.ttf");
+}
+:root {
+  --pink-light:#ef394e;
+}
+
+* {
+  margin: 0;
+}
+
+input::placeholder {
+  font-family: iranYEkAN;
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  font-family: iranYEkAN;
+  direction: rtl;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  height: 96vh;
+  position: relative;
+}
+header .father-bg-header section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+}
+header .father-bg-header #bg-header1 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-1.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+header .father-bg-header #bg-header2 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-2.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header .father-bg-header #bg-header3 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-3.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header .father-bg-header #bg-header4 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-4.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header .father-bg-header #bg-header5 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-5.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header .father-bg-header #bg-header6 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-6.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header .father-bg-header #bg-header7 {
+  width: 100%;
+  height: 96vh;
+  background-image: url("../img/bg-header-7.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header .header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+header .header-nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 22px 60px 60px 0;
+}
+header .header-nav nav .d1-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  position: relative;
+}
+header .header-nav nav .d1-nav i {
+  position: relative;
+  margin-left: 20px;
+  font-size: 20px;
+}
+header .header-nav nav .d1-nav i::after {
+  position: absolute;
+  content: "0";
+  top: -7px;
+  right: -12px;
+  font-size: 8px;
+  padding: 3px 5px;
+  background-color: var(--pink-light);
+  border-radius: 50%;
+  color: #fff;
+}
+header .header-nav nav .d1-nav .sign-up {
+  position: relative;
+}
+header .header-nav nav .d1-nav .sign-up::before {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 15px;
+  height: 7px;
+  content: "";
+  display: none;
+  background-color: #000;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+header .header-nav nav .d1-nav .sign-up::after {
+  position: absolute;
+  content: "مشاهده حساب کاربری";
+  top: 35px;
+  right: -35px;
+  width: 130px;
+  display: none;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  border-radius: 3px;
+}
+header .header-nav nav .d1-nav .sign-up:hover::after {
+  display: inline;
+}
+header .header-nav nav .d1-nav .sign-up:hover::before {
+  display: inline;
+}
+header .header-nav nav .d1-nav .d-child-shopping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35px;
+  right: 45px;
+  z-index: 10000;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 50px 10px 30px 10px;
+  width: 360px;
+  display: none;
+  text-align: center;
+}
+header .header-nav nav .d1-nav .d-child-shopping::after {
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  content: "";
+  background-color: #fff;
+  z-index: 10000;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+header .header-nav nav .d1-nav .d-child-shopping h4 {
+  font-size: 20px;
+}
+header .header-nav nav .d1-nav .d-child-shopping p {
+  color: #7b7b7b;
+  margin: 20px 0 40px 0;
+}
+header .header-nav nav .d1-nav .d-child-shopping ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .header-nav nav .d1-nav .d-child-shopping ul li {
+  text-align: center;
+  padding: 0 15px;
+}
+header .header-nav nav .d1-nav .d-child-shopping ul li a {
+  color: #41c1c6;
+}
+header .header-nav nav .d1-nav .d-child-shopping ul li:nth-child(2) {
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+header .header-nav nav .d2-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .header-nav nav .d2-nav .logo a {
+  font-size: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .header-nav nav .d2-nav .khat-black {
+  height: 1px;
+  width: 438px;
+  max-width: 100%;
+  background-color: #000;
+  margin-top: 20px;
+}
+header .header-nav nav .d2-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+header .header-nav nav .d2-nav ul li a {
+  padding: 10px 20px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+header .header-nav nav .d2-nav ul li a:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+header .header-nav nav .d2-nav ul li .a-pink {
+  color: var(--pink-light);
+}
+header .header-nav nav .d2-nav ul .border-column {
+  display: block;
+  width: 1px;
+  height: 15px;
+  margin: auto 20px;
+  background-color: rgba(0, 0, 0, 0.54);
+}
+header .header-nav nav .d3-nav form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 210px;
+  background: transparent;
+  border-bottom: 1px solid #666;
+  padding-bottom: 4px;
+}
+header .header-nav nav .d3-nav form i {
+  color: #666;
+}
+header .header-nav nav .d3-nav form input {
+  border: none;
+  background: transparent;
+  padding: 0 12px 5px 0;
+}
+header .header-nav nav .d3-nav form input::placeholder {
+  color: #666;
+  font-family: iranYEkAN;
+  font-size: 14px;
+}
+header .header-nav nav .d3-nav form input:focus {
+  outline: none;
+}
+header .header-nav .sec-search {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: calc(80vh - 100px);
+  background-color: rgba(243, 243, 244, 0.98);
+  z-index: 1000;
+  padding: 50px 0;
+  transition: top 0.3s;
+}
+header .header-nav .sec-search .d1-sec-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header .header-nav .sec-search .d1-sec-search .material-icons {
+  color: #7a7a7a;
+  cursor: pointer;
+  font-size: 30px;
+}
+header .header-nav .sec-search .d1-sec-search .material-icons:hover {
+  color: #000;
+  transition: color 0.4s;
+}
+header .header-nav .sec-search .d1-sec-search form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 13px 0;
+  margin-bottom: 15px;
+}
+header .header-nav .sec-search .d1-sec-search form .fa-search {
+  color: #7a7a7a;
+  font-size: 22px;
+}
+header .header-nav .sec-search .d1-sec-search form input {
+  border: none;
+  width: 97%;
+  padding-right: 20px;
+  background: transparent;
+}
+header .header-nav .sec-search .d1-sec-search form input:focus {
+  outline: none;
+}
+header .header-nav .sec-search .d1-sec-search form input::placeholder {
+  font-size: 22px;
+  color: #000;
+}
+header .header-nav .sec-search .d2-sec-search {
+  max-width: 930px;
+  margin: 30px auto 0 auto;
+  padding: 0 30px 20px 40px;
+}
+header .header-nav .sec-search .d2-sec-search div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header .header-nav .sec-search .d2-sec-search div i {
+  color: #7a7a7a;
+  padding-left: 10px;
+}
+header .header-nav .sec-search .d2-sec-search ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .header-nav .sec-search .d2-sec-search ul li {
+  color: #000;
+  margin: 0 0 10px 12px;
+  font-size: 18px;
+  border-radius: 17.5px;
+  background-color: #fff;
+  padding: 5px 20px;
+}
+header .header-nav .move-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  content: "";
+}
+header .header-nav .move-slider .btns-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .header-nav .move-slider .btns-slider p {
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  border: 1px solid #000;
+  background-color: transparent;
+  border-radius: 50%;
+}
+header .header-nav .move-slider .btns-slider #p1-btns-slider {
+  background-color: #000;
+}
+header .header-nav .move-slider .flesh-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .header-nav .move-slider .flesh-slider i {
+  font-size: 35px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
