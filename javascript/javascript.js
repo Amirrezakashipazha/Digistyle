@@ -1,14 +1,150 @@
 $(document).ready(function () {
 
     $('.fa-shopping-bag').hover(function () {
-        $('.d-child-shopping').css('display', 'inline');
+        $('.d-child-shopping').css('display', 'flex');
+
     }, function () {
-        setTimeout(function () {
+        var close_hover = setTimeout(function () {
             $('.d-child-shopping').css('display', 'none');
 
         }, 2000);
+        $('.d-child-shopping').hover(function () {
+            clearTimeout(close_hover);
+            $('.d-child-shopping').css('display', 'flex');
+        }, function () {
+            setTimeout(function () {
+                $('.d-child-shopping').css('display', 'none');
+
+            }, 2000);
+        });
+    });
+    
+    $('.li-brandha').hover(function () {
+        $('.brandha').css('display', 'flex');
+        $('.before5').css('display', 'flex');
+        
+    }, function () {
+        $('.brandha').css('display', 'none');
+        $('.before5').css('display', 'none');
+
+        $('.brandha').hover(function () {
+            $('.brandha').css('display', 'flex');
+            $('.before5').css('display', 'flex');
+        }, function () {
+            $('.brandha').css('display', 'none');
+            $('.before5').css('display', 'none');
+
+        });
+    });
+    
+    $('.li-zibaii-salamat').hover(function () {
+        $('#zibaii-salamat').css('display', 'flex');
+        $('.before4').css('display', 'flex');
+        $('#sec1-li-arayesh').css('display', 'flex');
+        $('.li-atr').css('border-color','#1bb4d8');
+    }, function () {
+        $('#zibaii-salamat').css('display', 'none');
+        $('.before4').css('display', 'none');
+        $('.li-atr').css('border-color','#fff');
+
+        $('#zibaii-salamat').hover(function () {
+            $('#zibaii-salamat').css('display', 'flex');
+            $('.before4').css('display', 'flex');
+        }, function () {
+            $('#zibaii-salamat').css('display', 'none');
+            $('.before4').css('display', 'none');
+
+        });
     });
 
+    $('.li-atr').hover(function () {
+        $(this).css('border-color','#1bb4d8');
+        $('#sec1-li-arayesh').css('display', 'flex');
+        $('#sec2-li-arayesh').css('display', 'none');
+        $('#sec3-li-arayesh').css('display', 'none');
+        $('#sec4-li-arayesh').css('display', 'none');
+        $('#sec5-li-arayesh').css('display', 'none');
+
+    }, function () {
+        $('#sec1-li-arayesh').css('display', 'none');
+        $(this).css('border-color','#fff');
+
+        $('#sec1-li-arayesh').hover(function () {
+            $('#sec1-li-arayesh').css('display', 'flex');
+        }, function () {
+            $('#sec1-li-arayesh').css('display', 'none');
+        });
+    });
+
+    $('.li-arayesh').hover(function () {
+        $('#sec1-li-arayesh').css('display', 'none');
+        $('#sec2-li-arayesh').css('display', 'flex');
+        $('#sec3-li-arayesh').css('display', 'none');
+        $('#sec4-li-arayesh').css('display', 'none');
+        $('#sec5-li-arayesh').css('display', 'none');
+
+    }, function () {
+        $('#sec2-li-arayesh').css('display', 'none');
+
+        $('#sec2-li-arayesh').hover(function () {
+            $('#sec2-li-arayesh').css('display', 'flex');
+        }, function () {
+            $('#sec2-li-arayesh').css('display', 'none');
+        });
+    });
+
+    $('.li-post').hover(function () {
+        $('#sec1-li-arayesh').css('display', 'none');
+        $('#sec2-li-arayesh').css('display', 'none');
+        $('#sec3-li-arayesh').css('display', 'flex');
+        $('#sec4-li-arayesh').css('display', 'none');
+        $('#sec5-li-arayesh').css('display', 'none');
+
+    }, function () {
+        $('#sec3-li-arayesh').css('display', 'none');
+
+        $('#sec3-li-arayesh').hover(function () {
+            $('#sec3-li-arayesh').css('display', 'flex');
+        }, function () {
+            $('#sec3-li-arayesh').css('display', 'none');
+        });
+    });
+
+    $('.li-mo').hover(function () {
+        $('#sec1-li-arayesh').css('display', 'none');
+        $('#sec2-li-arayesh').css('display', 'none');
+        $('#sec3-li-arayesh').css('display', 'none');
+        $('#sec4-li-arayesh').css('display', 'flex');
+        $('#sec5-li-arayesh').css('display', 'none');
+
+    }, function () {
+        $('#sec4-li-arayesh').css('display', 'none');
+
+        $('#sec4-li-arayesh').hover(function () {
+            $('#sec4-li-arayesh').css('display', 'flex');
+        }, function () {
+            $('#sec4-li-arayesh').css('display', 'none');
+        });
+    });
+
+    $('.li-shakhsi').hover(function () {
+        $('#sec1-li-arayesh').css('display', 'none');
+        $('#sec2-li-arayesh').css('display', 'none');
+        $('#sec3-li-arayesh').css('display', 'none');
+        $('#sec4-li-arayesh').css('display', 'none');
+        $('#sec5-li-arayesh').css('display', 'flex');
+
+    }, function () {
+        $('#sec5-li-arayesh').css('display', 'none');
+
+        $('#sec5-li-arayesh').hover(function () {
+            $('#sec5-li-arayesh').css('display', 'flex');
+        }, function () {
+            $('#sec5-li-arayesh').css('display', 'none');
+        });
+    });
+
+    
     $('#i-slider-header-left').click(function () {
         if ($('#bg-header1').css('opacity') == '1') {
             $('#bg-header1').css('opacity', '0');

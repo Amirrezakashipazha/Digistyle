@@ -36,6 +36,143 @@ body {
     direction: rtl;
     color: #000;
 }
+.style-img4-header{ /*global style*/
+    width: 470px;
+    height: 100%;
+    h3{
+        @include flex(row,flex-start ,flex-start );
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .d-img-style-img4-header{
+        @include flex(row,flex-start,flex-start);
+        flex-wrap: wrap;
+        width: 100%;
+        div{
+            position: relative;
+            width: 218px;
+            height: 120px;
+            margin-bottom: 16px;
+            margin-left: 16px;
+            cursor: pointer;
+            &:hover::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.1);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .a-style-img4-header{
+        @include flex(row,flex-end,center);
+        margin-left: 17px;
+        font-size: 18px;
+        i{
+            padding-right: 10px;
+        }
+    }
+}
+
+.sec-bakhshbandiha{ /*global style*/
+    @include flex(column,flex-start,center);
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 100%;
+    height: 85%;
+    background-color: #fff;
+    z-index: 1000;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    display: none;
+    .ul-navbar-dastebandi{
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0 !important;
+        li{
+            padding: 4px 0;
+            border-bottom: 2.5px solid #fff;
+            &:hover{                
+                transition: all 0.5s;
+                border-bottom: 2.5px solid #1bb4d8;
+            }
+            a{
+                color: #424242;
+                font-weight: 500;
+                &:hover{
+                    font-weight: 500 !important;
+                }
+                img{
+                    transform: translateY(6px);
+                    margin-left: 10px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .khat-column-brandha{
+        display: block;
+        width: 1px;
+        margin: 24px 16px 24px 40px;
+        background-color: #e0e0e2;
+        height: 100%;
+    }
+    .sec-main-bakhshbandiha{
+        @include flex(row,center,flex-start);
+        padding-top: 40px;
+        display: none;
+        .d-sec-bakhshbandiha{
+            @include flex(column,flex-start ,flex-start );
+            width: 230px;
+            h3{
+                @include flex();
+                margin-bottom: 16px;
+                font-weight: 500;
+                font-size: 17px;
+                i{
+                    padding-right: 6px;
+                    font-size: 15px;
+                }
+            }
+            ul{
+                @include flex(column,flex-start ,flex-start );
+                padding: 0;
+                li{
+                    padding: 7px 0;
+                    a{
+                        color: #757575;
+                        transition: all 0.4s;
+                        padding: 0;
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .a-bottom-bakhshbandiha{
+                @include flex(column,flex-start ,flex-start );
+                margin-top: 40px;
+                .a-red{
+                    padding: 8px 0;
+                    color: #ef394e;
+                }
+            }
+            
+        }
+
+    }
+
+}
+
 header{
     width: 100%;
     height: 96vh;
@@ -165,7 +302,7 @@ header{
                         text-align: center;
                         color: #fff;
                         background-color: #000;
-                        box-shadow: 0 5px 10px 1px rgb(0 0 0 / 20%);
+                        box-shadow: 0 5px 10px 1px rgba(0 ,0 ,0 ,0.2);
                         padding: 2px;
                         border-radius: 3px;
                     }
@@ -182,11 +319,11 @@ header{
                     @include flex(column,center,center);
                     position: absolute;
                     top: 35px;
-                    right: 45px;
+                    right: 60px;
                     z-index: 10000;
                     background-color: #fff;
                     border-radius: 4px;
-                    box-shadow: 0 5px 10px 2px rgb(0 0 0 / 20%);
+                    box-shadow: 0 5px 10px 2px rgba(0, 0, 0 ,0.2);
                     padding: 50px 10px 30px 10px;
                     width: 360px;
                     display: none;
@@ -258,6 +395,42 @@ header{
                         .a-pink{
                             color: var(--pink-light);
                         }
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            bottom: -12px;
+                            left: 15px;
+                            width: 60px;
+                            height: 10px;
+                            background-color: transparent;
+                            display: none;
+                        }
+                        .before{
+                            position: absolute;
+                            bottom: -12px;
+                            left:25px;
+                            content: '';
+                            width: 18px;
+                            height: 10px;
+                            z-index: 10000;
+                            background-color: #fff;
+                            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                            display:none;
+                        }
+                        &:hover::after{
+                            display: inline;
+                        }
+                    }
+                    .li-not-before{
+                        &::before{
+                            width: 0;
+                            height: 0;
+                        }
+                        &::after{
+                            width: 0;
+                            height: 0;
+                        }
                     }
                     .border-column{
                         display: block;
@@ -266,7 +439,66 @@ header{
                         margin: auto 20px;
                         background-color: rgba(0,0,0,.54);
                     }
+
                 }
+
+                .brandha{
+                    @include flex(row,center,flex-start);
+                    position: absolute;
+                    top: 140px;
+                    right: 0;
+                    width: 100%;
+                    height: 370px;
+                    background-color: #fff;
+                    z-index: 1000;
+                    border-top: 1px solid #e0e0e0;
+                    padding: 40px 0 58px 0;
+                    text-align: center;
+                    display: none;
+                    .d1-brandha{
+                        @include flex(column,flex-start ,flex-start );
+                        width: 230px;
+                        h3{
+                            margin-bottom: 16px;
+                            font-weight: 500;
+                        }
+                        ul{
+                            @include flex(column,flex-start ,flex-start );
+                            padding: 0;
+                            li{
+                                padding: 7px 0;
+                                a{
+                                    color: #757575;
+                                    transition: all 0.4s;
+                                    padding: 0;
+                                    &:hover{
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                        .a-moshahede-brandha{
+                            @include flex();
+                            font-weight: 500;
+                            font-size: 18px;
+                            i{
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    .khat-column-brandha{
+                        display: block;
+                        width: 1px;
+                        margin: 24px 16px 24px 40px;
+                        background-color: #e0e0e2;
+                        height: 100%;
+                    }
+          
+
+
+                }
+
+                
             }
             .d3-nav{
                 form{
