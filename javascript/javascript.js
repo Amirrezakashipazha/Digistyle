@@ -1294,3 +1294,84 @@ function show_search() {
 function close_search() {
     document.querySelector('.sec-search').style.top = '-100%';
 }
+
+function to_left() {
+    document.querySelector('.main-shegeft-angiz').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}
+
+function to_right() {
+    document.querySelector('.main-shegeft-angiz').scrollBy({
+        left: 900,
+        behavior: 'smooth'
+    });
+}
+function to_left2() {
+    document.querySelector('.main-porbazdid').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}
+
+function to_right2() {
+    document.querySelector('.main-porbazdid').scrollBy({
+        left: 900,
+        behavior: 'smooth'
+    });
+}
+function to_left3() {
+    document.querySelector('.main-porfrosh').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}
+
+function to_right3() {
+    document.querySelector('.main-porfrosh').scrollBy({
+        left: 900,
+        behavior: 'smooth'
+    });
+}
+
+function go_left1() {
+    document.getElementById('d-size1').scrollBy({
+       left:-240,
+       behavior:'smooth' 
+    });
+}
+
+function go_right1() {
+    document.getElementById('d-size1').scrollBy({
+        left: 240,
+        behavior: 'smooth'
+    });
+}
+function go_left2() {
+    document.getElementById('d-size2').scrollBy({
+       left:-240,
+       behavior:'smooth' 
+    });
+}
+
+function go_right2() {
+    document.getElementById('d-size2').scrollBy({
+        left: 240,
+        behavior: 'smooth'
+    });
+}
+function go_left3() {
+    document.getElementById('d-size3').scrollBy({
+       left:-240,
+       behavior:'smooth' 
+    });
+}
+
+function go_right3() {
+    document.getElementById('d-size3').scrollBy({
+        left: 240,
+        behavior: 'smooth'
+    });
+}
+
