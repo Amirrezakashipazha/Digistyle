@@ -154,6 +154,7 @@ body {
                         padding: 0;
                         &:hover{
                             color: #000;
+                            font-weight: 500;
                         }
                     }
                 }
@@ -172,7 +173,6 @@ body {
     }
 
 }
-
 header{
     width: 100%;
     height: 96vh;
@@ -291,6 +291,7 @@ header{
                         display: none;
                         background-color: #000;
                         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                        z-index: 100000;
                     }
                     &::after{
                         position: absolute;
@@ -305,6 +306,7 @@ header{
                         box-shadow: 0 5px 10px 1px rgba(0 ,0 ,0 ,0.2);
                         padding: 2px;
                         border-radius: 3px;
+                        z-index: 100000;
                     }
                     &:hover{
                         &::after{
@@ -417,6 +419,9 @@ header{
                             background-color: #fff;
                             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
                             display:none;
+                        }
+                        .before4{
+                            left: 50px;
                         }
                         &:hover::after{
                             display: inline;
@@ -535,7 +540,7 @@ header{
             width: 100%;
             height: calc(80vh - 100px);
             background-color: rgba(243,243,244,.98);
-            z-index: 1000;
+            z-index: 1000000;
             padding: 50px 0;
             transition: top 0.3s;
             .d1-sec-search{
@@ -632,6 +637,424 @@ header{
                     font-size: 35px;
                     cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+
+.sec-grid-imgs{
+    background-color: #f5f5f5;
+    margin: 40px 0;
+    width: calc(100% - 160px);
+    height: 100%;
+    padding:0 80px;
+    ul{
+        @include flex();
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        li{
+            cursor: pointer;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 48px;
+            padding: 0 16px;
+            margin: 0 12px;
+            border-bottom: 4px solid #f5f5f5;
+        }
+    }
+
+    .sec-grid-mardane{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+        grid-template-areas: "img1-grid img1-grid img1-grid" "img2-grid img3-grid img4-grid";
+        padding-bottom: 40px;
+
+        .img1-grid{
+            grid-area: img1-grid;
+            height: 100%;
+            &::after{
+                content: 'لباس مردانه';
+            }
+        }
+        .img2-grid{
+            grid-area: img2-grid;
+            &::after{
+                content: 'کفش مردانه';
+            }
+        }
+        .img3-grid{
+            grid-area: img3-grid;
+            &::after{
+                content: 'اکسسوری مردانه';
+            }
+        }
+        .img4-grid{
+            grid-area: img4-grid;
+            &::after{
+                content: 'ورزشی مردانه';
+            }
+        }
+        div{
+            width: 100%;
+            height: calc(100% - 40px);
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &::after{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                content: '';
+                font-size: 24px;
+                color: #7b7b7b;
+                padding: 4px 12px;
+                background-color: #f5f5f5;
+
+            }
+            &:hover{
+                &::after{
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .sec-grid-zanane{
+        .img1-grid{
+            &::after{
+                content: 'لباس زنانه';
+            }
+        }
+        .img2-grid{
+            &::after{
+                content: 'کفش زنانه';
+            }
+        }
+        .img3-grid{
+            &::after{
+                content: 'اکسسوری زنانه';
+            }
+        }
+        .img4-grid{
+            &::after{
+                content: 'ورزشی زنانه';
+            }
+        }
+    }
+
+    .sec-grid-bachegane{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+        grid-template-areas: "img1-grid img1-grid " "img2-grid img3-grid ";
+        padding-bottom: 40px;
+        .img1-grid{
+            grid-area: img1-grid;
+            height: 100%;
+            &::after{
+                content: 'نوزاد';
+            }
+        }
+        .img2-grid{
+            grid-area: img2-grid;
+            &::after{
+                content: 'دخترانه';
+            }
+        }
+        .img3-grid{
+            grid-area: img3-grid;
+            &::after{
+                content: 'پسرانه';
+            }
+        }
+        div{
+            width: 100%;
+            height: calc(100% - 40px);
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &::after{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                content: '';
+                font-size: 24px;
+                color: #7b7b7b;
+                padding: 4px 12px;
+                background-color: #f5f5f5;
+
+            }
+            &:hover{
+                &::after{
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .sec-grid-zibaiisalamat{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+        grid-template-areas: "img1-grid img1-grid img1-grid img1-grid" "img2-grid img3-grid img4-grid img5-grid";
+        padding-bottom: 40px;
+
+        .img1-grid{
+            grid-area: img1-grid;
+            height: 100%;
+            &::after{
+                content: 'لوازم آرایشی';
+            }
+        }
+        .img2-grid{
+            grid-area: img2-grid;
+            &::after{
+                content: 'لوازم بهداشتی';
+            }
+        }
+        .img3-grid{
+            grid-area: img3-grid;
+            &::after{
+                content: 'لوازم شخصی برقی';
+            }
+        }
+        .img4-grid{
+            grid-area: img4-grid;
+            &::after{
+                content: 'عطر و ادکلن';
+            }
+        }
+        .img5-grid{
+            grid-area: img5-grid;
+            &::after{
+                content: 'ابزار سلامت';
+            }
+        }
+        div{
+            width: 100%;
+            height: calc(100% - 40px);
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &::after{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                content: '';
+                font-size: 24px;
+                color: #7b7b7b;
+                padding: 4px 12px;
+                background-color: #f5f5f5;
+
+            }
+            &:hover{
+                &::after{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.shegeft-aviz{
+    @include flex(row,flex-start ,center );
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 76px 0;
+    .d-logo-shegeft-angiz{
+        @include flex(column,space-between , center);
+        height: 500px;
+        padding: 16px 80px 0 40px;
+        img{
+            width: 125px;
+        }
+        a{
+            background-color: #f04d7d;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 4px 18px;
+            &:hoveR{
+                background-color: #fff;
+                color: #f04d7d;
+                border-color: #f04d7d;
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+    .main-shegeft-angiz{
+        @include flex(row,flex-start ,center );
+        overflow: scroll;
+        .item-shegeft-aviz{
+            @include flex(column,flex-start ,center );
+            padding: 12px 12px 0;
+            min-height: 500px;
+            min-width: 360px;
+            background-color: #fff;
+            border: 1px solid rgb(214, 214, 214);
+            margin-left: 24px;
+            &:hover{
+                .main-item-shegeft .d-size{
+                    bottom: 0px;
+                    transition: all 0.2s ease-out;
+                }
+                .main-item-shegeft .takhfif-img-main-item{
+                    bottom: 58px;
+                    transition: all 0.2s ease-out;
+
+                }
+            }
+            .header-item-shegeft{
+                @include flex(row,space-between ,center);
+                width: 100%;
+                color: #f04d7d;
+                margin-bottom: 12px;
+                .p-pishnhad-segeft-angit{
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+            .main-item-shegeft{
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #dbdbdb;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+                .brand-img-main-item{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: #fff;
+                    padding: 6px 12px;
+                    text-align: center;
+                    min-height: 36px;
+                    color: #434343;
+                }
+                .takhfif-img-main-item{
+                    position: absolute;
+                    bottom: 0px;
+                    left: -1px;
+                    padding: 12px;
+                    color: #fff;
+                    background-color: #262626;
+                }
+                .d-size{
+                    @include flex(row,flex-start,center);
+                    position: absolute;
+                    bottom: -50px;
+                    left: -2px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                    width: calc(100% - 16px);
+                    // height: 20px;
+                    z-index: 100;
+                    padding: 12px 8px;
+                    a{
+                        @include flex();
+                        margin-left: 16px;
+                        font-size: 16px;
+                    }
+                    .bg-entekhab{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 12px;
+                        border-radius: 1px;
+                        border: 1px solid #e9e9e9;
+                        
+                    }
+                }
+            
+            }
+            .caption-item-shegeft{
+                @include flex(row,space-between ,flex-start);
+                width: 100%;
+                height: 50px;
+                font-size: 16.5px;
+                margin-top: 10px;
+                div{
+                    @include flex();
+                    color: #434343;
+                }
+            }
+            .price-item-shegeft{
+                @include flex(row,flex-end,center);
+                width: 100%;
+                margin:30px 0 12px 0;
+                font-size: 18px;
+                font-size: 1.125rem;
+                font-weight: 400;
+                del{
+                    margin-left: 8px;
+                    color: #7b7b7b;
+                    letter-spacing: -1.5px;
+                }
+                p{
+                    margin-right: 4px;
+                }
+            }
+            .progressbar-mojod{
+
+                width: 100%;
+                .d-progress-darsad{
+                    @include flex();
+                    p{
+                        color: #f04d7d;
+                        margin-left: 8px;
+                    }
+                    .width-progress{
+                        @include flex(row-reverse,flex-start ,center );
+                        width: 90%;
+                        height: 5px;
+                        background-color: #d9d9d9;
+                       
+                        .div-pishraft{
+                            width: 50%;
+                            height: 100%;
+                            background-color: #f04d7d;
+                        }
+                    }
+                    
+                }
+                .froshrafte{
+                    color: #9d9d9d;
+                    font-size: 14px;                
+                }
+                
             }
         }
     }
