@@ -19,7 +19,6 @@ $(document).ready(function () {
         });
     });
 
-
     $('.li-brandha').hover(function () { //ایتم نوبار برندها بدون زیرمجموعه 
         $('.brandha').css('display', 'flex');
         $('.before5').css('display', 'flex');
@@ -37,7 +36,6 @@ $(document).ready(function () {
 
         });
     });
-
 
 
     $('.li-zibaii-salamat').hover(function () { //آیتم نوبار زیبایی سلامت با 5 زیرمجموعه
@@ -66,7 +64,6 @@ $(document).ready(function () {
 
         });
     });
-
     $('.li-atr').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
         $(this).css('border-color', '#1bb4d8');
@@ -97,7 +94,6 @@ $(document).ready(function () {
 
 
     });
-
     $('.li-arayesh').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -125,7 +121,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-post').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -156,7 +151,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-mo').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -187,7 +181,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-shakhsi').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -219,7 +212,6 @@ $(document).ready(function () {
     });
 
 
-
     $('.li-bachegane').hover(function () { //آیتم نوبار بچگانه با 3 زیرمجموعه
         $('#bachegane').css('display', 'flex');
         $('#sec1-li-bachegane').css('display', 'flex');
@@ -244,7 +236,6 @@ $(document).ready(function () {
 
         });
     });
-
     $('.li-lebas-bachegane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -271,7 +262,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-kafsh-bachegane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -298,7 +288,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-aksesori-bachegane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -327,8 +316,6 @@ $(document).ready(function () {
     });
 
 
-
-
     $('.li-mardane').hover(function () { //آیتم نوبار مردانه با 5 زیرمجموعه
         $('#mardane').css('display', 'flex');
         $('#sec1-li-mardane').css('display', 'flex');
@@ -355,7 +342,6 @@ $(document).ready(function () {
         });
 
     });
-
     $('.li-lebas-mardane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -385,7 +371,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-kif-mardane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -415,7 +400,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-kafsh-mardane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -445,7 +429,6 @@ $(document).ready(function () {
             });
         });
     });
-
     $('.li-aksesori-mardane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -475,7 +458,6 @@ $(document).ready(function () {
 
         });
     });
-
     $('.li-varzeshi-mardane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -505,7 +487,6 @@ $(document).ready(function () {
     });
 
 
-
     $('.li-zanane').hover(function () { //آیتم نوبار زنانه با 5 زیرمجموعه
         $('#zanane').css('display', 'flex');
         $('.before1').css('display', 'flex');
@@ -532,7 +513,6 @@ $(document).ready(function () {
         });
 
     });
-
     $('.li-lebas-zanane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -568,7 +548,6 @@ $(document).ready(function () {
 
 
     });
-
     $('.li-kif-zanane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
         $('#sec2-li-zanane').css('display', 'flex');
@@ -598,7 +577,6 @@ $(document).ready(function () {
         });
 
     });
-
     $('.li-kafsh-zanane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -629,7 +607,6 @@ $(document).ready(function () {
         });
 
     });
-
     $('.li-aksesori-zanane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -661,7 +638,6 @@ $(document).ready(function () {
         });
 
     });
-
     $('.li-varzeshi-zanane').hover(function () {
         $('.sec-main-bakhshbandiha').css('display', 'none');
 
@@ -695,7 +671,6 @@ $(document).ready(function () {
         });
 
     });
-
 
 
     //اسلایدر بک گراند هدر
@@ -930,7 +905,6 @@ $(document).ready(function () {
             'transition': 'transform .7s ease-out'
         });
     });
-
     $('.img2-grid').hover(function () {
         $('.img2-grid img').css({
             'transform': 'scale(1.04)',
@@ -942,7 +916,6 @@ $(document).ready(function () {
             'transition': 'transform .7s ease-out'
         });
     });
-
     $('.img3-grid').hover(function () {
         $('.img3-grid img').css({
             'transform': 'scale(1.04)',
@@ -954,7 +927,6 @@ $(document).ready(function () {
             'transition': 'transform .7s ease-out'
         });
     });
-
     $('.img4-grid').hover(function () {
         $('.img4-grid img').css({
             'transform': 'scale(1.04)',
@@ -966,7 +938,6 @@ $(document).ready(function () {
             'transition': 'transform .7s ease-out'
         });
     });
-
     $('.img5-grid').hover(function () {
         $('.img5-grid img').css({
             'transform': 'scale(1.04)',
@@ -978,7 +949,6 @@ $(document).ready(function () {
             'transition': 'transform .7s ease-out'
         });
     });
-
     $('.li-grid-mardane').click(function () {
         $(this).css('border-color', '#000');
         $('.li-grid-zanane').css('border-color', '#f5f5f5');
@@ -990,7 +960,6 @@ $(document).ready(function () {
         $('#sec-grid-bachegane').css('display', 'none');
         $('#sec-grid-zibaiisalamat').css('display', 'none');
     });
-
     $('.li-grid-zanane').click(function () {
         $(this).css('border-color', '#000');
         $('.li-grid-mardane').css('border-color', '#f5f5f5');
@@ -1002,7 +971,6 @@ $(document).ready(function () {
         $('#sec-grid-bachegane').css('display', 'none');
         $('#sec-grid-zibaiisalamat').css('display', 'none');
     });
-
     $('.li-grid-bachegane').click(function () {
         $(this).css('border-color', '#000');
         $('.li-grid-mardane').css('border-color', '#f5f5f5');
@@ -1014,7 +982,6 @@ $(document).ready(function () {
         $('#sec-grid-bachegane').css('display', 'grid');
         $('#sec-grid-zibaiisalamat').css('display', 'none');
     });
-
     $('.li-grid-zibaii-salamat').click(function () {
         $(this).css('border-color', '#000');
         $('.li-grid-mardane').css('border-color', '#f5f5f5');
@@ -1028,6 +995,93 @@ $(document).ready(function () {
     });
     //grid-zanane-mardane-bachegane-zibaii salamat
 
+
+    //grid-irani
+    $('.li-degarman-irani').click(function(){
+        $(this).css({'font-size':'35px','color':'#000'});
+        $('.li-delavin-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-gray-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-ress-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-encio-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-koi-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.d-grid-degarman').css('display','grid');
+        $('.d-grid-delavin').css('display','none');
+        $('.d-grid-gray').css('display','none');
+        $('.d-grid-ress').css('display','none');
+        $('.d-grid-encio').css('display','none');
+        $('.d-grid-koi').css('display','none');
+    });
+    $('.li-delavin-irani').click(function(){
+        $(this).css({'font-size':'35px','color':'#000'});
+        $('.li-degarman-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-gray-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-ress-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-encio-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-koi-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.d-grid-degarman').css('display','none');
+        $('.d-grid-delavin').css('display','grid');
+        $('.d-grid-gray').css('display','none');
+        $('.d-grid-ress').css('display','none');
+        $('.d-grid-encio').css('display','none');
+        $('.d-grid-koi').css('display','none');
+    });
+    $('.li-gray-irani').click(function(){
+        $(this).css({'font-size':'35px','color':'#000'});
+        $('.li-degarman-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-delavin-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-ress-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-encio-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-koi-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.d-grid-degarman').css('display','none');
+        $('.d-grid-delavin').css('display','none');
+        $('.d-grid-gray').css('display','grid');
+        $('.d-grid-ress').css('display','none');
+        $('.d-grid-encio').css('display','none');
+        $('.d-grid-koi').css('display','none');
+    });
+    $('.li-ress-irani').click(function(){
+        $(this).css({'font-size':'35px','color':'#000'});
+        $('.li-degarman-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-delavin-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-gray-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-encio-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-koi-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.d-grid-degarman').css('display','none');
+        $('.d-grid-delavin').css('display','none');
+        $('.d-grid-gray').css('display','none');
+        $('.d-grid-ress').css('display','grid');
+        $('.d-grid-encio').css('display','none');
+        $('.d-grid-koi').css('display','none');
+    });
+    $('.li-encio-irani').click(function(){
+        $(this).css({'font-size':'35px','color':'#000'});
+        $('.li-degarman-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-delavin-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-gray-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-ress-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-koi-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.d-grid-degarman').css('display','none');
+        $('.d-grid-delavin').css('display','none');
+        $('.d-grid-gray').css('display','none');
+        $('.d-grid-ress').css('display','none');
+        $('.d-grid-encio').css('display','grid');
+        $('.d-grid-koi').css('display','none');
+    });
+    $('.li-koi-irani').click(function(){
+        $(this).css({'font-size':'35px','color':'#000'});
+        $('.li-degarman-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-delavin-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-gray-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-ress-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.li-encio-irani').css({'font-size':'21px','color':'#9d9d9d'});
+        $('.d-grid-degarman').css('display','none');
+        $('.d-grid-delavin').css('display','none');
+        $('.d-grid-gray').css('display','none');
+        $('.d-grid-ress').css('display','none');
+        $('.d-grid-encio').css('display','none');
+        $('.d-grid-koi').css('display','grid');
+    });
+    //grid-irani
 
 });
 
@@ -1290,18 +1344,15 @@ setInterval(function () {
 function show_search() {
     document.querySelector('.sec-search').style.top = 0;
 }
-
 function close_search() {
     document.querySelector('.sec-search').style.top = '-100%';
 }
-
 function to_left() {
     document.querySelector('.main-shegeft-angiz').scrollBy({
         left: -900,
         behavior: 'smooth'
     });
 }
-
 function to_right() {
     document.querySelector('.main-shegeft-angiz').scrollBy({
         left: 900,
@@ -1314,7 +1365,6 @@ function to_left2() {
         behavior: 'smooth'
     });
 }
-
 function to_right2() {
     document.querySelector('.main-porbazdid').scrollBy({
         left: 900,
@@ -1327,21 +1377,54 @@ function to_left3() {
         behavior: 'smooth'
     });
 }
-
 function to_right3() {
     document.querySelector('.main-porfrosh').scrollBy({
         left: 900,
         behavior: 'smooth'
     });
 }
-
+function to_left4() {
+    document.querySelector('.main-jadidtarin').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}
+function to_right4() {
+    document.querySelector('.main-jadidtarin').scrollBy({
+        left: 900,
+        behavior: 'smooth'
+    });
+}
+function to_left5() {
+    document.querySelector('.main-bazdid-akhir').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}
+function to_right5() {
+    document.querySelector('.main-bazdid-akhir').scrollBy({
+        left: 900,
+        behavior: 'smooth'
+    });
+}
+function to_left6() {
+    document.getElementById('main-style-week').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}
+function to_right6() {
+    document.getElementById('main-style-week').scrollBy({
+        left: 900,
+        behavior: 'smooth'
+    });
+}
 function go_left1() {
     document.getElementById('d-size1').scrollBy({
        left:-240,
        behavior:'smooth' 
     });
 }
-
 function go_right1() {
     document.getElementById('d-size1').scrollBy({
         left: 240,
@@ -1354,7 +1437,6 @@ function go_left2() {
        behavior:'smooth' 
     });
 }
-
 function go_right2() {
     document.getElementById('d-size2').scrollBy({
         left: 240,
@@ -1367,7 +1449,6 @@ function go_left3() {
        behavior:'smooth' 
     });
 }
-
 function go_right3() {
     document.getElementById('d-size3').scrollBy({
         left: 240,

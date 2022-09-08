@@ -39,6 +39,10 @@ body {
 .p-top-40px{
     margin-top: 80px;
 }
+.m-left-last{
+    margin-left: 120px !important;
+}
+
 .style-img4-header{ /*global style*/
     width: 470px;
     height: 100%;
@@ -176,6 +180,7 @@ body {
     }
 
 }
+
 header{
     width: 100%;
     height: 96vh;
@@ -939,7 +944,7 @@ header{
             @include flex(column,flex-start ,center );
             padding: 12px 12px 0;
             min-height: 500px;
-            min-width: 290px;
+            min-width: 330px;
             background-color: #fff;
             border: 1px solid rgb(214, 214, 214);
             margin-left: 24px;
@@ -978,7 +983,7 @@ header{
                 border: 1px solid #dbdbdb;
                 width: 100%;
                 img{
-                    height: 100%;
+                    height: 350px;
                     width: 100%;
                 }
                 .brand-img-main-item{
@@ -990,6 +995,7 @@ header{
                     text-align: center;
                     min-height: 36px;
                     color: #434343;
+                    
                 }
                 .takhfif-img-main-item{
                     position: absolute;
@@ -1191,3 +1197,432 @@ header{
     }
 }
 
+.mahbob-tarinha{
+    @include flex(column,center ,flex-start);
+    background-color: #fff;
+    width: 100%;
+    .head-mahbob{
+        @include flex(row,space-between ,center );
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        h2{
+            font-size: 28px;
+            font-weight: 400;
+        }
+        a{
+            @include flex();
+            font-size: 20px;
+            i{
+                padding-right: 8px;
+            }
+        }
+    }
+    .main-mahbob{
+        @include flex(row,center ,flex-start );
+        padding: 40px 80px 56px;
+        width: calc(100% - 160px);
+        .item-shegeft-aviz{
+            border: none;
+        }
+        .head-main-mahbob{
+            @include flex(column,center ,center );
+            position: relative;
+            z-index: 100;
+            img{
+                height: 64px;
+                width: 64px;
+                margin-bottom: 28px;
+            }
+            a{
+                @include flex();
+                font-size: 20px;
+                i{
+                    padding-right: 8px;
+                }
+            }
+        }
+
+        .head-main-mahbob,.item-shegeft-aviz{
+            width: 25%;
+            margin: 0 12px;
+        }
+        
+    }
+    .main-mahbob1{
+    position: relative;
+
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 200px;
+            background-color: #e9e9e9;
+        }
+    }
+    
+    .main-mahbob2{
+    position: relative;
+
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 200px;
+            background-color: #e9e9e9;
+        }
+    }
+   
+}
+
+.link-zibaii-salamat{
+    h2{
+        font-size: 28px;
+        font-weight: 400;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .sec-main-link-salamat{
+        @include flex();
+        margin: 0 auto;
+        width: 90%;
+        .d-link-salmat{
+            width: 25%;
+            margin: 0 8px 40px 8px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.jadidtarin{
+    .main-jadidtarin{
+        .item-shegeft-aviz{
+            min-height: 400px;
+            border: none;
+        }
+    }
+}
+
+.tarahi-irani{
+
+    width: 100%;
+    .head-irani{
+        @include flex(row,space-between ,center );
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        h2{
+            font-size: 28px;
+            font-weight: 400;
+        }
+        a{
+            @include flex();
+            font-size: 20px;
+            i{
+                padding-right: 8px;
+            }
+        }
+    }
+    .main-irani{
+        @include flex(row,flex-start,flex-start);
+        width: calc(100% - 160px);
+        // margin: 0 auto;
+        padding: 40px 80px;
+        ul{
+            max-width: 290px;
+            width: 20vw;
+            margin-left: 40px;
+            li{
+                cursor: pointer;
+                font-size: 21px;
+                font-weight: 500;
+                color: #9d9d9d;
+                margin-bottom: 24px;
+            }
+        }
+        .d-grid-irani{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: "irani2 irani2 irani1" "irani3 irani4 irani5";
+            gap: 40px;
+            .d-child1-grid-irani{
+                grid-area: irani1;
+            }
+            .d-child2-grid-irani{
+                grid-area: irani2;
+            }
+            .d-child3-grid-irani{
+                grid-area: irani3;
+            }
+            .d-child4-grid-irani{
+                grid-area: irani4;
+            }
+            .d-child5-grid-irani{
+                grid-area: irani5;
+            }
+            .d-child-grid-irani{
+                position: relative;
+                width: 100%;
+                height: 400px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .takhfif-img-main-item{
+                    position: absolute;
+                    bottom: 0px;
+                    left: -1px;
+                    padding: 12px;
+                    color: #fff;
+                    background-color: #262626;
+                }
+            }
+        }
+    }
+}
+
+.grid-takhfif{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+    grid-template-areas: "d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d2-takhfif d2-takhfif d2-takhfif"
+    "d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d2-takhfif d2-takhfif d2-takhfif"
+    "d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d2-takhfif d2-takhfif d2-takhfif"
+    "d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d2-takhfif d2-takhfif d2-takhfif"
+    "d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d1-takhfif d2-takhfif d2-takhfif d2-takhfif"
+    "d3-takhfif d3-takhfif d3-takhfif d3-takhfif d4-takhfif d4-takhfif d2-takhfif d2-takhfif d2-takhfif"
+    "d3-takhfif d3-takhfif d3-takhfif d3-takhfif d4-takhfif d4-takhfif d5-takhfif d5-takhfif d5-takhfif"
+    "d3-takhfif d3-takhfif d3-takhfif d3-takhfif d4-takhfif d4-takhfif d5-takhfif d5-takhfif d5-takhfif"
+    "d3-takhfif d3-takhfif d3-takhfif d3-takhfif d4-takhfif d4-takhfif d5-takhfif d5-takhfif d5-takhfif";
+    gap: 4px;
+    direction: ltr;
+    .d1-grid-takhfif{
+        grid-area: d1-takhfif;
+    }
+    .d2-grid-takhfif{
+        grid-area: d2-takhfif;
+    }
+    .d3-grid-takhfif{
+        grid-area: d3-takhfif;
+    }
+    .d4-grid-takhfif{
+        grid-area: d4-takhfif;
+    }
+    .d5-grid-takhfif{
+        grid-area: d5-takhfif;
+    }
+    div{
+        width: 100%;
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.style-week{
+    @include flex(column,center ,center );
+    margin: 80px auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .head-style-week{
+        @include flex(row,space-between ,center );
+        width:calc(100% - 160px);
+        padding: 0 80px;
+        margin: 20px 0 40px 0;
+        h2{
+            font-size: 30px;
+            font-weight: 500;
+            background-color: #fff;
+            display: inline-block;
+        }
+        a{
+            background-color: #fff;
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: center;
+            border: 1px solid #000;
+            padding: 4px 18px;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+                border-color: #000;
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+    .border-absolute{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 240px);
+        height: 105%;
+        border: 1px solid #000;
+        margin: 0 120px;
+        z-index: -1;
+    }
+ 
+    .main-style-week{
+        @include flex(row,flex-start ,center );
+        width: 100%;
+        position: relative;
+        .item-shegeft-aviz{
+            border: none;
+        }
+        .item-shegeft-aviz .main-item-shegeft .d-size .matn-size-small{
+            width: 40px;
+        }
+        .d-khanom-style-week{
+            justify-content: center;
+            padding: 0 80px 0 40px;
+            width: 36%;
+            max-width: 575px;
+            height: 47vw;
+            max-height: 680px;
+            position: relative;
+            z-index: 1;
+            background: #fff;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .shegeft-aviz{
+            width: 64%;
+            .main-style-week{
+                overflow: hidden;
+                width: 100%;
+            }
+            // .anggle{
+            //     transform: translateX(250px);
+            // }
+            .anggle-right{
+                right: 0;
+            }
+            .anggle-left{
+                left: 120px;
+            }
+        }
+       
+    }
+}
+
+.d-kart-hedie{
+    margin:80px 80px 40px 80px;
+    width: calc(100% - 160px);
+    img{
+        width: 100%;
+    }
+}
+
+.digi-mag{
+    width: calc(100% - 160px);
+    padding: 0 80px;
+    overflow: hidden;
+    .head-digi-mag{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .sec-main-digi-mag{
+        @include flex();
+        width: 100%;
+        .d-main-hamegi{
+            width: 25%;
+            height: 350PX;
+            margin-left: 40px;
+            padding: 16px;
+            border: 1px solid #fff;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .matn-digi-mag{
+                margin-top: 24px;
+
+                h5{
+                    font-size:18px;
+                    font-weight: 500;
+                    margin-bottom: 12px;
+                }
+                p{
+                    line-height: 24px;
+                    color: #262626;
+                    max-height: 80px;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+                height: 24px;
+                width: 100%;
+                background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(hsla(0,0%,100%,0)))!important;
+                background: linear-gradient(0deg,#fff,hsla(0,0%,100%,0));
+            }
+            &:hover{
+                border-color: #000;
+            }
+        }
+    }
+}
+
+.footer-1{
+    width: calc(100% - 160px);
+    padding: 0 80px;
+    margin-bottom: 40px;
+    .sec-top-f1{
+        @include flex(row,space-evenly ,flex-start);
+        padding: 40px 0;
+        ul{
+            li{
+                margin-bottom: 8px;
+                
+                h4{
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                }
+                a{
+                    font-size: 19px;
+                    border-bottom: 1px solid #fff;
+                    &:hover{
+                        border-color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .sec-bottom-f1{
+        @include flex();
+        padding: 40px 0;
+        div{
+            @include flex(column,center,center);
+            img{
+                min-width: 120px;
+            }
+            h3{
+                font-size: 25px;
+                font-weight: 400;
+                color: #434343;
+            }
+        }
+        div:nth-child(2){
+            margin: 0 180px;
+        }
+    }
+}
