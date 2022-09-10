@@ -1455,4 +1455,9 @@ function go_right3() {
         behavior: 'smooth'
     });
 }
-
+function return_top(){
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+}

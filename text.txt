@@ -1,0 +1,19 @@
+            <div class="item-shegeft-aviz-mobile">
+                <div class="main-item-shegeft-mobile">
+                    <a href="#"><img src="img/" alt=""></a>
+                </div>
+                <div class="caption-item-shegeft-mobile">
+                    <div class="d-caption-shegeft">
+                        <p></p>
+                        <i class="	fas fa-store-alt"></i>
+                    </div>
+                    <a href="#"></a>
+                </div>
+                <div class="price-item-shegeft-mobile">
+                    <del></del>
+                    <div class="price-nahaii">
+                        <p></p>
+                        <p>تومان</p>
+                    </div>
+                </div>
+            </div>
