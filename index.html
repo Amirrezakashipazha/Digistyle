@@ -42,19 +42,20 @@
         <section class="header-nav">
             <nav>
                 <div class="d1-nav">
-                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
-                    <a href="#" class="sign-up">وارد شوید</a>
-
-                    <div class="d-child-shopping">
-                        <img src="img/shopping.svg" alt="">
-                        <h4>سبد خرید شما خالی است</h4>
-                        <p>شاید این صفحات برای شما جذاب باشند</p>
-                        <ul>
-                            <li><a href="#">حراج استایل</a></li>
-                            <li><a href="#">برندهای برتر</a></li>
-                            <li><a href="#">خانه طراحان ایرانی</a></li>
-                        </ul>
+                    <div class="d-father-d-child-shopping">
+                        <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        <div class="d-child-shopping">
+                            <img src="img/shopping.svg" alt="">
+                            <h4>سبد خرید شما خالی است</h4>
+                            <p>شاید این صفحات برای شما جذاب باشند</p>
+                            <ul>
+                                <li><a href="#">حراج استایل</a></li>
+                                <li><a href="#">برندهای برتر</a></li>
+                                <li><a href="#">خانه طراحان ایرانی</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <a href="#" class="sign-up">وارد شوید</a>
                 </div>
                 <div class="d2-nav">
                     <div class="logo"><a href="#">DIGISTYLE</a></div>
@@ -1177,11 +1178,11 @@
     <section class="header-mobile">
         <nav>
             <div>
-                <i class="	fa fa-navicon"></i>
+                <i class="	fa fa-navicon" onclick="show_nav_mobile()"></i>
                 <img src="img/logo-digistyle.svg" alt="">
             </div>
 
-            <i class="	fa fa-shopping-bag"></i>
+            <i class="	fa fa-shopping-bag" onclick="show_sabad_kharid()"></i>
         </nav>
         <form action="">
             <i class="	fas fa-search"></i>
@@ -2967,12 +2968,12 @@
             <a href="#">مشاهده همه</a>
         </div>
         <div class="body-brand-bartar-img-mobile">
-            <a href="#"><img src="img/brandbartar1-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/brandbartar2-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/brandbartar3-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/brandbartar4-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/brandbartar5-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/brandbartar6-mobile.jpg" alt=""></a>
+            <div><a href="#"><img src="img/brandbartar1-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/brandbartar2-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/brandbartar3-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/brandbartar4-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/brandbartar5-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/brandbartar6-mobile.jpg" alt=""></a></div>
         </div>
     </section>
 
@@ -3223,12 +3224,12 @@
             <a href="#">مشاهده همه</a>
         </div>
         <div class="body-brand-bartar-img-mobile body-brand-bartar-img-mobile2">
-            <a href="#"><img src="img/khane-tarahan1-mobile.png" alt=""></a>
-            <a href="#"><img src="img/khane-tarahan2-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/khane-tarahan3-mobile.jpg" alt=""></a>
-            <a href="#"><img src="img/khane-tarahan4-mobile.png" alt=""></a>
-            <a href="#"><img src="img/khane-tarahan5-mobile.png" alt=""></a>
-            <a href="#"><img src="img/khane-tarahan6-mobile.jpg" alt=""></a>
+            <div><a href="#"><img src="img/khane-tarahan1-mobile.png" alt=""></a></div>
+            <div><a href="#"><img src="img/khane-tarahan2-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/khane-tarahan3-mobile.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/khane-tarahan4-mobile.png" alt=""></a></div>
+            <div><a href="#"><img src="img/khane-tarahan5-mobile.png" alt=""></a></div>
+            <div><a href="#"><img src="img/khane-tarahan6-mobile.jpg" alt=""></a></div>
         </div>
     </section>
 
@@ -3592,7 +3593,7 @@
         </section>
     </section>
 
-    <section class="shegeft-aviz porbazdidtarin media-992px">
+    <section class="shegeft-aviz porbazdidtarin media-992px max-width">
         <div class="d-logo-shegeft-angiz">
             <h2>پربــازدیـد تریـن‌های اخــیــــــــر</h2>
             <a href="#">مشاهده همه</a>
@@ -4107,13 +4108,13 @@
 
     </section>
 
-    <section class="two-tabligh media-992px">
+    <section class="two-tabligh media-992px max-width">
         <a href="#" class="tablig-1"><img src="img/tabligh1.jpg" alt=""></a>
         <a href="#" class="tablig-2"><img src="img/tabligh2.jpg" alt=""></a>
 
     </section>
 
-    <section class="shegeft-aviz porbazdidtarin p-top-40px porfroshtarin media-992px">
+    <section class="shegeft-aviz porbazdidtarin p-top-40px porfroshtarin media-992px max-width">
         <div class="d-logo-shegeft-angiz">
             <h2>
                 پرفـــروش تریـن‌های اخــیــــــــر
@@ -4256,7 +4257,7 @@
 
     </section>
 
-    <section class="mahbob-tarinha shegeft-aviz media-992px">
+    <section class="mahbob-tarinha shegeft-aviz media-992px max-width">
         <div class="head-mahbob">
             <h2>محــبوبــــ‌ترینــ بــرنــدها</h2>
 
@@ -4407,7 +4408,7 @@
 
     </section>
 
-    <section class="link-zibaii-salamat media-992px">
+    <section class="link-zibaii-salamat media-992px max-width">
         <h2>زیبـــایــی‌ و‌ ســـلـامــت</h2>
         <section class="sec-main-link-salamat">
             <div class="d-link-salmat">
@@ -4426,7 +4427,7 @@
 
     </section>
 
-    <section class="shegeft-aviz porbazdidtarin jadidtarin media-992px">
+    <section class="shegeft-aviz porbazdidtarin jadidtarin media-992px max-width">
         <div class="d-logo-shegeft-angiz">
             <h2>جــــــدیــد تریـن‌های اخــیــــــــر</h2>
             <a href="#">مشاهده همه</a>
@@ -4687,7 +4688,7 @@
         </section>
     </section>
 
-    <section class="tarahi-irani media-992px">
+    <section class="tarahi-irani media-992px max-width">
         <div class="head-irani">
             <h2>طـــراحانــ ایــــرانـی</h2>
             <a href="#">مشاهده خانه طراحان ایرانی<i class="fas fa-arrow-left"></i></a>
@@ -4793,7 +4794,7 @@
         </div>
     </section>
 
-    <section class="grid-takhfif media-992px">
+    <section class="grid-takhfif media-992px max-width">
         <div class="d1-grid-takhfif"><a href="#"><img src="img/img1-takhfif-grid.jpg" alt=""></a></div>
         <div class="d2-grid-takhfif"><a href="#"><img src="img/img2-takhfif-grid.jpg" alt=""></a></div>
         <div class="d3-grid-takhfif"><a href="#"><img src="img/img3-takhfif-grid.jpg" alt=""></a></div>
@@ -4801,7 +4802,7 @@
         <div class="d5-grid-takhfif"><a href="#"><img src="img/img5-takhfif-grid.jpg" alt=""></a></div>
     </section>
 
-    <section class="style-week media-992px">
+    <section class="style-week media-992px max-width">
         <section class="border-absolute"></section>
 
         <div class="head-style-week">
@@ -4993,7 +4994,7 @@
         </section>
     </section>
 
-    <section class="shegeft-aviz porbazdidtarin media-992px">
+    <section class="shegeft-aviz porbazdidtarin media-992px max-width">
         <div class="d-logo-shegeft-angiz">
             <h2>بـازدیــدها ی اخیـــــر شــــــــمـــا</h2>
             <a href="#">مشاهده همه</a>
@@ -5110,7 +5111,7 @@
 
     </section>
 
-    <section class="digi-mag media-992px">
+    <section class="digi-mag media-992px max-width">
         <div class="head-digi-mag">
             <h2>دیجی‌استایل در دیجی‌مگ</h2>
         </div>
@@ -5197,7 +5198,7 @@
         <a href="#"><img src="img/kart-hedie.png" alt=""></a>
     </div>
 
-    <section class="footer-1">
+    <section class="footer-1 max-width">
         <section class="sec-top-f1">
             <ul>
                 <li>
@@ -5254,7 +5255,7 @@
         </section>
     </section>
 
-    <footer>
+    <footer class="max-width">
         <div class="d-head-footer">
             <img src="img/logo-digistyle.svg" alt="">
         </div>
@@ -5359,7 +5360,7 @@
 
     <section class="footer-mobile">
         <div class="d1-footer-mobile">
-            <a href="#"><i class="	fas fa-angle-up"></i>بازگشت به بالای صفحه</a>
+            <p href="#" onclick="return_top2()"><i class="	fas fa-angle-up"></i>بازگشت به بالای صفحه</p>
         </div>
         <div class="d2-footer-mobile">
             <div>
@@ -5393,6 +5394,8 @@
         </div>
         <div class="d5-footer-mobile">
             <p>فروشگاه اینترنتی مد و لباس دیجی‌استایل</p>
+            <div class="d-opacity"></div>
+
             <p>
                 توسعه اینترنت روشهای خرید ما را به کلی دگرگون کرده است. منافع موجود در خرید اینترنتی هر روز، تعداد
                 بیشتری از مردم را به تجربه آن و ایجاد تغییر در الگوهای متداول خرید ترغیب می کند. بعد از تجربه دیجی کالا،
@@ -5404,15 +5407,77 @@
                 در کمترین زمان برای انجام فعالیت هایی وقت گیر گذشته می کند، تا قبل از دیجی‌استایل فرآیند استقبال مشتریان
                 از دیجی کالا ثابت کرد این روش از زندگی مورد علاقه طیف عظیمی از افراد است
             </p>
-            <a href="#">بیشتر<i class="	fas fa-angle-down"></i></a>
+            <span class="more-matn">بیشتر<i class="	fas fa-angle-down"></i></span>
+            <span class="more-matn-kamtar" style="display: none;">کمتر<i class="	fas fa-angle-up"></i></span>
         </div>
         <div class="d6-footer-mobile">
             <p>کليه حقوق اين سايت متعلق به شرکت نوآوران فن آوازه (فروشگاه اینترنتی دیجی‌استایل) می‌باشد</p>
         </div>
     </section>
 
+    <section class="sec-nav-mobile">
+        <div class="d1-sec-nav-mobile">
+            <i class="material-icons" onclick="close_nav_mobile()"> close</i>
+            <a href="#">ورود و ثبت نام</a>
+        </div>
+        <form action="">
+            <input class="input-search-mobile" type="search" name="" placeholder="جستجو در دسته بندی ها"
+                onkeydown="change_icon_input()">
+            <i class="fas fa-search" id="icon-input-mobile1"></i>
+            <i class="fas fa-window-close" id="icon-input-mobile2" onclick="clear_input_search()"></i>
 
+        </form>
+        <ul class="ul1-sec-nav-mobile">
+            <li><img src="img/zanane-nav-mobile.png" alt=""><a href="#">زنانه</a></li>
+            <li><img src="img/mardane-nav-mobile.png" alt=""><a href="#">مردانه</a></li>
+            <li><img src="img/bachegane-nav-mobile.png" alt=""><a href="#">بچگانه</a></li>
+            <li><img src="img/zibaii-salamat-nav-mobile.png " alt=""><a href="#">زیبایی و سلامت</a></li>
+        </ul>
+        <ul class="ul2-sec-nav-mobile">
+            <li><a href="#">حراج استایل</a></li>
+            <li><a href="#">برندها</a></li>
+            <li><a href="#">خانه ساعت</a></li>
+        </ul>
+    </section>
+    <div class="d-dark" onclick="close_nav_mobile()"></div>
 
+    <section class="sabad-kharid-mobile">
+        <div class="d1-sabad-kharid-mobile">
+            <h3>سبد خرید</h3>
+            <i class="material-icons" onclick="close_sabad_kharid()">close</i>
+        </div>
+        <div class="d2-sabad-kharid-mobile">
+            <div><a class="a1-list-after" href="#">سبد خرید</a></div>
+            <div style="background-color: #fff;"><a class="a2-list-after" href="#">لیست علاقه مندی ها</a></div>
+        </div>
+        <div class="d3-sabad-kharid-mobile">
+            <a href="#"><img src="img/sabad-kharid-mobile.png" alt=""></a>
+            <p>سبد خرید شما خالی است.</p>
+            <a class="a-safheasli" href="#" onclick="close_sabad_kharid()">صفحه اصلی</a>
+        </div>
+        <div class="d4-sabad-kharid-mobile">
+            <div>
+                <img src="img/zemanat.svg" alt="">
+                <p>ضمانت چهارده روز </p>
+                <p> بازگشت کالا</p>
+            </div>
+            <div>
+                <img src="img/tahvilasan.svg" alt="">
+                <p>تحویل </p>
+                <p> سریع و آسان</p>
+            </div>
+            <div>
+                <img src="img/asl.svg" alt="">
+                <p>ضمانت </p>
+                <p> اصل بودن کالا</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="mobile-ofoghi">
+        <img src="img/goshi-ofoghi.svg" alt="">
+        <P>لطفا گوشی خود را به حالت عمودی بازگردانید</P>
+    </div>
 
     <script src="javascript/jquery-3.3.1.js"></script>
     <script src="javascript/jquery-3.3.1.min.js"></script>
